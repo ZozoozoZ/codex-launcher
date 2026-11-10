@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
+  <title>Open your Codex chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="launch.js"></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">SORB · CODEX</p>
+    <h1>Continue your task.</h1>
+    <p id="status" role="status">Checking this chat link…</p>
+    <a id="open-chat" class="button" hidden rel="noreferrer">Open in Codex <span aria-hidden="true">↗</span></a>
+    <p id="launch-note" class="muted" hidden>Your browser may ask permission to open the desktop app.</p>
+    <section id="fallback" hidden aria-labelledby="fallback-title">
+      <h2 id="fallback-title">If the app doesn’t open</h2>
+      <p>On your Codex PC, copy this address into <strong>Windows+R</strong>, then press Enter.</p>
+      <code id="address"></code>
+      <button id="copy-address" type="button">Copy address</button>
+      <p id="copy-status" role="status"></p>
+    </section>
+    <section aria-labelledby="phone-title">
+      <h2 id="phone-title">Using your phone?</h2>
+      <p>Open ChatGPT, choose <strong>Codex</strong> or <strong>Remote</strong>, select your connected computer, and find the task. Your computer must be awake and online.</p>
+      <p class="muted">Opening this exact chat from the button on mobile is not verified.</p>
+    </section>
+    <footer>This page does not read or share your conversation. It only prepares an app-opening link.</footer>
+    <noscript>Enable JavaScript to prepare the chat link, or find the task in Codex by its name.</noscript>
+  </main>
+</body>
+</html>
