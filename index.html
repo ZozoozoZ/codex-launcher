@@ -8,7 +8,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
   <title>Open your Codex chat</title>
   <link rel="stylesheet" href="styles.css">
-  <script type="module" src="launch.js"></script>
+  <script type="module" src="launch.js?v=android-entry-1"></script>
 </head>
 <body>
   <main>
@@ -24,10 +24,10 @@
       <button id="copy-address" type="button">Copy address</button>
       <p id="copy-status" role="status"></p>
     </section>
-    <section aria-labelledby="phone-title">
-      <h2 id="phone-title">Using your phone?</h2>
+    <section id="phone-help" hidden aria-labelledby="phone-title">
+      <h2 id="phone-title">Find your task on Android</h2>
       <p>Open ChatGPT, choose <strong>Codex</strong> or <strong>Remote</strong>, select your connected computer, and find the task. Your computer must be awake and online.</p>
-      <p class="muted">Opening this exact chat from the button on mobile is not verified.</p>
+      <p class="muted">The button opens Codex. Select the conversation yourself using the task name in your email.</p>
     </section>
     <footer>This page does not read or share your conversation. It only prepares an app-opening link.</footer>
     <noscript>Enable JavaScript to prepare the chat link, or find the task in Codex by its name.</noscript>
