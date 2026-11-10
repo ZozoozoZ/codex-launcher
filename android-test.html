@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
+  <title>Test d’ouverture Codex sur Android</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="android-test.js"></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">SORB · TEST ANDROID</p>
+    <h1>Ouvrir cette conversation.</h1>
+    <p>Ouvre cette page dans <strong>Chrome sur Android</strong>, puis touche le bouton. Si la page est dans le navigateur intégré d’une autre application, utilise son menu pour l’ouvrir dans Chrome.</p>
+    <p id="status" role="status">Vérification du lien…</p>
+    <a id="android-open" class="button" hidden rel="noreferrer">Ouvrir dans ChatGPT <span aria-hidden="true">↗</span></a>
+    <section>
+      <h2>Test expérimental</h2>
+      <p>Le bouton demande explicitement à Android de transmettre le lien de cette conversation à ChatGPT. L’application doit reconnaître ce lien et avoir accès à ton ordinateur.</p>
+      <p>Indique le résultat : la bonne conversation s’ouvre, ChatGPT s’ouvre ailleurs, un message d’échec apparaît ici, ou rien ne se passe.</p>
+      <p class="muted">Ce test ne prouve pas encore la compatibilité Android. Il ne crée aucune conversation et n’envoie aucun message.</p>
+    </section>
+    <footer>Cette page ne lit pas ta conversation. Aucun résultat de test n’est envoyé automatiquement.</footer>
+    <noscript>JavaScript est nécessaire pour préparer ce lien de test.</noscript>
+  </main>
+</body>
+</html>
