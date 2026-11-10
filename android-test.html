@@ -8,19 +8,22 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
   <title>Test d’ouverture Codex sur Android</title>
   <link rel="stylesheet" href="styles.css">
-  <script type="module" src="android-test.js"></script>
+  <script type="module" src="android-test.js?v=2"></script>
 </head>
 <body>
   <main>
     <p class="eyebrow">SORB · TEST ANDROID</p>
-    <h1>Ouvrir cette conversation.</h1>
+    <h1>Vérifier l’ouverture de ChatGPT.</h1>
     <p>Ouvre cette page dans <strong>Chrome sur Android</strong>, puis touche le bouton. Si la page est dans le navigateur intégré d’une autre application, utilise son menu pour l’ouvrir dans Chrome.</p>
     <p id="status" role="status">Vérification du lien…</p>
-    <a id="android-open" class="button" hidden rel="noreferrer">Ouvrir dans ChatGPT <span aria-hidden="true">↗</span></a>
+    <a id="android-entry" class="button" hidden rel="noreferrer">1. Ouvrir l’écran Codex <span aria-hidden="true">↗</span></a>
+    <p class="muted">Ce premier test ouvre seulement l’écran Codex de ChatGPT. Il ne sélectionne pas la conversation.</p>
+    <a id="android-open" class="button" hidden rel="noreferrer">2. Ouvrir la conversation <span aria-hidden="true">↗</span></a>
+    <p id="click-status" role="status">Aucun bouton touché sur cette page.</p>
     <section>
       <h2>Test expérimental</h2>
-      <p>Le bouton demande explicitement à Android de transmettre le lien de cette conversation à ChatGPT. L’application doit reconnaître ce lien et avoir accès à ton ordinateur.</p>
-      <p>Indique le résultat : la bonne conversation s’ouvre, ChatGPT s’ouvre ailleurs, un message d’échec apparaît ici, ou rien ne se passe.</p>
+      <p>Le test 1 utilise une adresse signalée comme fonctionnelle par un projet Android indépendant. Le test 2 reprend le lien de conversation qui n’a pas fonctionné lors de ton premier essai.</p>
+      <p>Commence par le test 1. Si rien ne s’ouvre, indique si la phrase « Clic reçu » apparaît sous les boutons, ou si un message d’échec s’affiche.</p>
       <p class="muted">Ce test ne prouve pas encore la compatibilité Android. Il ne crée aucune conversation et n’envoie aucun message.</p>
     </section>
     <footer>Cette page ne lit pas ta conversation. Aucun résultat de test n’est envoyé automatiquement.</footer>
