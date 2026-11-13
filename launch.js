@@ -34,6 +34,14 @@ if (typeof document !== "undefined") {
     if (isAndroid && new URLSearchParams(window.location.search).get("android_fallback") === "1") {
       status.textContent = "Your browser did not open ChatGPT. Open ChatGPT manually and choose Codex or Remote.";
     }
+    if (!isAndroid && !/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      status.textContent = "Opening your chat in Codex. If it does not open, use the button below.";
+      try {
+        window.location.replace(address);
+      } catch {
+        status.textContent = "Your browser could not open Codex automatically. Use the button below.";
+      }
+    }
     document.getElementById("address").textContent = address;
     document.getElementById("copy-address").addEventListener("click", async () => {
       const feedback = document.getElementById("copy-status");
